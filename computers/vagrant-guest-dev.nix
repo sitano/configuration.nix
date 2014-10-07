@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ virtualbox-guest-dev.nix ];
+  imports = [ /vagrant/computers/virtualbox-guest-dev.nix ];
 }
