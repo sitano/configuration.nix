@@ -2,11 +2,9 @@
 
 {
   imports =
-    [ ../modules/boot.nix
-      ../modules/fonts.nix
+    [ ../modules/fonts.nix
       ../modules/i18n.nix
       ../modules/packages.nix
-      ../users/sitano.nix
     ];
 
   nix.gc.automatic = true;

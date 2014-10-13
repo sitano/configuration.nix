@@ -7,7 +7,7 @@
     uid = 1000;
     createHome = true;
     home = "/home/sitano";
-    useDefaultShell = shell;
+    useDefaultShell = false;
     shell = "/run/current-system/sw/bin/zsh";
     openssh.authorizedKeys.keys = [ "ssh-rsa AAA john.koepi@gmail.com" ];
   };

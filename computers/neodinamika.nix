@@ -2,7 +2,9 @@
 
 {
   imports = [
-    kaliningrad.nix
+    ../modules/boot.nix
+    ./kaliningrad.nix
+    ../users/sitano.nix
     ../modules/networking.nix
     ../modules/xserver.nix
     <nixos/modules/programs/virtualbox.nix>

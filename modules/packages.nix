@@ -7,7 +7,6 @@
     aspellDicts.ru
     cmake
     ctags
-    exercism
     fish
     gcc
     gimp

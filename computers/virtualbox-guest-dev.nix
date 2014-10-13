@@ -2,7 +2,9 @@
 
 {
   imports = [
-    kaliningrad.nix
+    ../modules/boot.nix
+    ./kaliningrad.nix
+    ../users/sitano.nix
     ../modules/xserver.nix
   ];
 

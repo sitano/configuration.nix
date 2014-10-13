@@ -7,7 +7,7 @@
     fonts = with pkgs; [
       inconsolata
       terminus_font
-      source-code-pro
+#      source-code-pro
       dosemu_fonts
      ];
   };

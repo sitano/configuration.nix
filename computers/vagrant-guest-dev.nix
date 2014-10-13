@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ /vagrant/computers/virtualbox-guest-dev.nix ];
+  imports = [
+    /etc/nixos/configuration.nix
+    /vagrant/computers/kaliningrad.nix
+  ];
 }
