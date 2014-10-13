@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Install before: $ vagrant plugin install vagrant-vbguest
   # Install before: $ vagrant plugin install vagrant-nixos
   config.vm.box = "cstrahan/nixos-14.04-x86_64"
-  # config.vm.box_url = "http://s3.amazonaws.com/oxdi/nixos-14.04-x86_64-virtualbox.box"
+  config.vm.box_url = "http://s3.amazonaws.com/oxdi/nixos-14.04-x86_64-virtualbox.box"
   #
   config.vbguest.auto_update = false
 
@@ -63,5 +63,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   }
   # }
 
-  config.vm.provision :nixos, :path => "./computers/vagrant-guest-dev.nix"
+  config.vm.provision :nixos,
+    :path => "./computers/vagrant-guest-dev.nix",
+    :include => true
+
 end
