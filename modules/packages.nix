@@ -9,22 +9,13 @@
     ctags
     fish
     gcc
-    gimp
     git
+    mercurial
+    # svn
     gnumake
-    (haskellPackages.ghcWithPackages (self: [
-      self.ghc
-      self.ghcMod
-      self.testFrameworkHunit
-      self.xmobar
-      self.xmonad
-      self.xmonadContrib
-      self.xmonadExtras
-    ]))
     ledger
     nix-repl
     python
-    texLiveFull
     vifm
     vimHugeX
     wget

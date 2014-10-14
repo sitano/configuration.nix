@@ -2,7 +2,8 @@
 
 {
   imports =
-    [ ../modules/fonts.nix
+    [ ../modules/nobeep.nix
+      ../modules/fonts.nix
       ../modules/i18n.nix
       ../modules/packages.nix
     ];
