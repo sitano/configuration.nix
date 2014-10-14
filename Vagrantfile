@@ -66,6 +66,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :nixos,
     :path => "./computers/vagrant-guest-dev.nix",
     :include => true,
-    :debug => true
+    :verbose => true
 
 end
