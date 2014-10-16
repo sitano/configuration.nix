@@ -6,4 +6,6 @@
   boot.loader.grub.version = 2;
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.device = "/dev/sda";
+
+  fileSystems."/".device = "/dev/disk/by-label/nixos";
 }
