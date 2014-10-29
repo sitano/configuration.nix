@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 # $ fdisk /dev/sda # (or whatever device you want to install on)
 # $ mkfs.ext4 -L nixos /dev/sda1
@@ -10,7 +10,7 @@
 # $ nixos-install
 # $ reboot
 
-with pkgs.lib;
+with lib;
 
 {
   imports = [
@@ -21,7 +21,7 @@ with pkgs.lib;
   ];
 
   # FIXME: UUID detection is currently broken
-  boot.loader.grub.fsIdentifier = "provided";
+  # boot.loader.grub.fsIdentifier = "provided";
 
   # Allow mounting of shared folders.
   users.extraUsers.sitano.extraGroups = [ "vboxsf" ];
