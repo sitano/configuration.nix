@@ -10,6 +10,8 @@
 # $ nixos-install
 # $ reboot
 
+with pkgs.lib;
+
 {
   imports = [
     ../modules/boot.nix
