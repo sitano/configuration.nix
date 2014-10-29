@@ -28,7 +28,6 @@
 
       i3 = {
         enable = true;
-        enableContribAndExtras = true;
       };
     };
   };
